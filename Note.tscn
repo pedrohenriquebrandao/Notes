@@ -50,7 +50,7 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=2]
 
 custom_solver_bias = 0.0
-radius = 67.3
+radius = 36.788
 
 [node name="Note" type="RigidBody2D"]
 

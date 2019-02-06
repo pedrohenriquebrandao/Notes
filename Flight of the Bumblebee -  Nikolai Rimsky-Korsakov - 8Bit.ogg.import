@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg-49cecd9258df712d3e583189529be110.oggstr"
+
+[deps]
+
+source_file="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg"
+dest_files=[ "res://.import/Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg-49cecd9258df712d3e583189529be110.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

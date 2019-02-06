@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://TitleScreen.gd" type="Script" id=1]
 [ext_resource path="res://logo.png" type="Texture" id=2]
 [ext_resource path="res://newgame40.tres" type="DynamicFont" id=3]
 [ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -49,9 +50,10 @@ anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -292.0
-margin_right = 292.0
-margin_bottom = 145.0
+margin_left = -381.0
+margin_top = -23.0
+margin_right = 414.0
+margin_bottom = 197.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -86,10 +88,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 7.0
-margin_top = 20.0
-margin_right = 777.0
-margin_bottom = 200.0
+margin_top = 55.0
+margin_right = 770.0
+margin_bottom = 244.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
@@ -111,10 +112,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -115.0
-margin_top = -20.0
-margin_right = 101.0
-margin_bottom = 21.0
+margin_left = -246.0
+margin_top = -26.0
+margin_right = 279.0
+margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 2
@@ -122,7 +123,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 custom_fonts/font = ExtResource( 3 )
-text = "NOVO JOGO"
+text = "CLIQUE PARA COMEÇAR"
 align = 1
 valign = 1
 percent_visible = 1.0
@@ -152,6 +153,15 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="1"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 [connection signal="pressed" from="Menu/VBoxContainer/Start" to="." method="_on_Button_pressed"]
 
