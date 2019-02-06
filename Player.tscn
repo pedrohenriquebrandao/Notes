@@ -2,7 +2,6 @@
 
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://player.png" type="Texture" id=2]
-[ext_resource path="res://HUD.tscn" type="PackedScene" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -12,6 +11,11 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="CircleShape2D" id=2]
+
+custom_solver_bias = 0.0
+radius = 38.1817
 
 [node name="Area2D" type="Area2D"]
 
@@ -36,6 +40,8 @@ frames = SubResource( 1 )
 animation = "default"
 _sections_unfolded = [ "Transform" ]
 
-[node name="HUD" parent="." index="1" instance=ExtResource( 3 )]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+shape = SubResource( 2 )
 
 

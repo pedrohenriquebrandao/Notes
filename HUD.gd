@@ -6,4 +6,6 @@ func _ready():
 	pass
 
 func update_score(score):
+	score += 1
 	$ScoreLabel.text = str(score)
+
