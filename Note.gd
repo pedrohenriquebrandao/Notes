@@ -2,7 +2,7 @@ extends RigidBody2D
 
 export (int) var MIN_SPEED # minimum speed range
 export (int) var MAX_SPEED # maximum speed range
-var mob_types = ["A", "B", "C", "D", "E", "F"]
+var mob_types = ["A", "B", "C", "D", "E", "F", "G"]
 
 func _ready():
     $AnimatedSprite.animation = mob_types[randi() % mob_types.size()]
