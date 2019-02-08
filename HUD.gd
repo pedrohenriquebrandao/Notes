@@ -10,6 +10,7 @@ func _ready():
 func update_score(score):
 	$ScoreLabel.text = str(score)
 
-
+func update_note(note):
+	$Note.text = str(note)
 
 

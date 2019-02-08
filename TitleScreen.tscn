@@ -7,7 +7,7 @@
 [ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=6]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 
 size = 200
 use_mipmaps = false
@@ -15,7 +15,7 @@ use_filter = false
 font_data = ExtResource( 3 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 
 size = 20
 use_mipmaps = false
@@ -89,7 +89,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 text = "NOTES"
 align = 1
 valign = 1
@@ -180,7 +180,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 text = "Versão 1.0"
 align = 3
 valign = 2
