@@ -1,50 +1,50 @@
 [gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Note.gd" type="Script" id=1]
-[ext_resource path="res://F.png" type="Texture" id=2]
-[ext_resource path="res://A.png" type="Texture" id=3]
-[ext_resource path="res://G.png" type="Texture" id=4]
-[ext_resource path="res://B.png" type="Texture" id=5]
-[ext_resource path="res://D.png" type="Texture" id=6]
-[ext_resource path="res://E.png" type="Texture" id=7]
-[ext_resource path="res://C.png" type="Texture" id=8]
+[ext_resource path="res://A.png" type="Texture" id=2]
+[ext_resource path="res://G.png" type="Texture" id=3]
+[ext_resource path="res://B.png" type="Texture" id=4]
+[ext_resource path="res://D.png" type="Texture" id=5]
+[ext_resource path="res://E.png" type="Texture" id=6]
+[ext_resource path="res://C.png" type="Texture" id=7]
+[ext_resource path="res://F.png" type="Texture" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "F",
+"name": "A",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "A",
+"name": "G",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "G",
+"name": "B",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "B",
+"name": "D",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "D",
+"name": "E",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "E",
+"name": "C",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "C",
+"name": "F",
 "speed": 5.0
 } ]
 

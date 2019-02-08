@@ -1,7 +1,6 @@
 extends Area2D
 
 signal hit
-var score = 0
 
 export (int) var speed # How fast the player will move (pixels/sec).
 var screensize  # Size of the game window.
@@ -16,7 +15,7 @@ func _process(delta):
     if Input.is_action_pressed("ui_left"):
         velocity.x -= 1
     if velocity.length() > 0:
-        velocity = velocity.normalized() * speed
+        velocity = velocity.normalized() * speed * 1.1
         $AnimatedSprite.play()
     else:
         $AnimatedSprite.stop()

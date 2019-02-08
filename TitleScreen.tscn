@@ -1,18 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://TitleScreen.gd" type="Script" id=1]
-[ext_resource path="res://player.png" type="Texture" id=2]
-[ext_resource path="res://fonts/adumu.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://newgame40.tres" type="DynamicFont" id=4]
-[ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=5]
-[ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=6]
+[ext_resource path="res://bg1.png" type="Texture" id=2]
+[ext_resource path="res://player.png" type="Texture" id=3]
+[ext_resource path="res://fonts/adumu.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://newgame40.tres" type="DynamicFont" id=5]
+[ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 200
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 3 )
+font_data = ExtResource( 4 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=2]
@@ -20,7 +21,7 @@ _sections_unfolded = [ "Font", "Settings" ]
 size = 20
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 5 )
+font_data = ExtResource( 6 )
 _sections_unfolded = [ "Font", "Settings" ]
 
 [node name="Node" type="Node"]
@@ -28,7 +29,26 @@ _sections_unfolded = [ "Font", "Settings" ]
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Menu" type="MenuButton" parent="." index="0"]
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -56.0
+margin_top = -117.0
+margin_right = 1224.0
+margin_bottom = 603.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Menu" type="MenuButton" parent="." index="1"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -59,17 +79,17 @@ anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -408.0
+margin_left = -432.0
 margin_top = 41.0
-margin_right = -216.0
-margin_bottom = 229.0
+margin_right = -227.0
+margin_bottom = 240.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 expand = true
 stretch_mode = 0
 
@@ -79,9 +99,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 130.0
+margin_left = 132.0
 margin_top = -53.0
-margin_right = 877.0
+margin_right = 879.0
 margin_bottom = 311.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -155,7 +175,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 4 )
+custom_fonts/font = ExtResource( 5 )
 text = "CLIQUE PARA COMEÇAR"
 align = 1
 valign = 1
@@ -189,9 +209,9 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="1"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="2"]
 
-stream = ExtResource( 6 )
+stream = ExtResource( 7 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true

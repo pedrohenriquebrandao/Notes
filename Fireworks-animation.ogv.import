@@ -1,0 +1,14 @@
+[remap]
+
+importer="Theora"
+type="VideoStreamTheora"
+path="res://.import/Fireworks-animation.ogv-92a5d69191472cac446d8ac92095e7a8.ogvstr"
+
+[deps]
+
+source_file="res://Fireworks-animation.ogv"
+dest_files=[ "res://.import/Fireworks-animation.ogv-92a5d69191472cac446d8ac92095e7a8.ogvstr" ]
+
+[params]
+
+loop=true
