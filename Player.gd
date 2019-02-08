@@ -1,5 +1,8 @@
 extends Area2D
 
+signal hit
+var score = 0
+
 export (int) var speed # How fast the player will move (pixels/sec).
 var screensize  # Size of the game window.
 
@@ -22,3 +25,6 @@ func _process(delta):
     position.x = clamp(position.x, 0, screensize.x)
     position.y = clamp(position.y, 0, screensize.y)
 
+func _on_Area2D_body_entered(body):
+	emit_signal("hit")
+	

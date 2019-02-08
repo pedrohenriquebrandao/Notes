@@ -1,20 +1,29 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://TitleScreen.gd" type="Script" id=1]
-[ext_resource path="res://logo.png" type="Texture" id=2]
-[ext_resource path="res://newgame40.tres" type="DynamicFont" id=3]
-[ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=5]
+[ext_resource path="res://player.png" type="Texture" id=2]
+[ext_resource path="res://fonts/adumu.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://newgame40.tres" type="DynamicFont" id=4]
+[ext_resource path="res://fonts/Courier Prime Code.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Flight of the Bumblebee -  Nikolai Rimsky-Korsakov - 8Bit.ogg" type="AudioStream" id=6]
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 200
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 3 )
+_sections_unfolded = [ "Font", "Settings" ]
 
 [sub_resource type="DynamicFont" id=1]
 
 size = 20
 use_mipmaps = false
 use_filter = false
-font_data = ExtResource( 4 )
+font_data = ExtResource( 5 )
 _sections_unfolded = [ "Font", "Settings" ]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -50,10 +59,10 @@ anchor_left = 0.5
 anchor_top = 0.0
 anchor_right = 0.5
 anchor_bottom = 0.0
-margin_left = -431.0
-margin_top = 13.0
-margin_right = 433.0
-margin_bottom = 236.0
+margin_left = -408.0
+margin_top = 41.0
+margin_right = -216.0
+margin_bottom = 229.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -64,7 +73,32 @@ texture = ExtResource( 2 )
 expand = true
 stretch_mode = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Menu" index="2"]
+[node name="Label" type="Label" parent="Menu" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 130.0
+margin_top = -53.0
+margin_right = 877.0
+margin_bottom = 311.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "NOTES"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu" index="3"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -121,7 +155,7 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
-custom_fonts/font = ExtResource( 3 )
+custom_fonts/font = ExtResource( 4 )
 text = "CLIQUE PARA COMEÇAR"
 align = 1
 valign = 1
@@ -130,7 +164,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Anchor", "Focus", "Margin", "Material", "Theme", "Visibility", "custom_colors", "custom_fonts", "custom_styles" ]
 
-[node name="VersionLabel" type="Label" parent="Menu" index="3"]
+[node name="VersionLabel" type="Label" parent="Menu" index="4"]
 
 anchor_left = 0.0
 anchor_top = 1.0
@@ -157,7 +191,7 @@ _sections_unfolded = [ "custom_fonts" ]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="1"]
 
-stream = ExtResource( 5 )
+stream = ExtResource( 6 )
 volume_db = 0.0
 pitch_scale = 1.0
 autoplay = true
